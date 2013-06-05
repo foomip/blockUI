@@ -6,13 +6,13 @@ blockUI AngularJS Service
 
 <h2>How to use it</h2>
 
-<h3>Include the service in your application</h3>
+<h4>Include the service in your application</h4>
 ```coffeescript
 'use strict'
 
 app = angular.module('BlockUI'])
 ```
-<h3>Default options</h3>
+<h4>Default options</h4>
 
 ```coffeescript
 # Overwrite what you need
@@ -23,7 +23,7 @@ defaults =
   blockUIClass: "blockui-blocked" # this class will be appended to the body
 ```
 
-<h3>Inject the service into your controller</h3>
+<h4>Inject the service into your controller</h4>
 ```coffeescript
 'use strict'
 
