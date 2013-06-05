@@ -28,16 +28,15 @@ defaults =
 'use strict'
 
 angular.module('Controllers')
-  .controller 'demoCtrl',
-    ['$blockUI', ($blockUI) ->
-      $scope.demoMethod = ->
-        blockUI = $blockUI.createBlockUI
-          innerHTML: "<strong>Waiting for data ...</strong>"
-        blockUI.blockUI()
-        waitForSomethingFunction (success)->
-          blockUI.unblockUI()
-          console.log "Success callback - unblocking" 
-    ]
+  .controller 'demoCtrl', ['$blockUI', ($blockUI) ->
+    $scope.demoMethod = ->
+      blockUI = $blockUI.createBlockUI
+        innerHTML: "<strong>Waiting for data ...</strong>"
+      blockUI.blockUI()
+      waitForSomethingFunction (success)->
+        blockUI.unblockUI()
+        console.log "Success callback - unblocking" 
+  ]
 ```
 <h2>Demo</h2>
 WIP
