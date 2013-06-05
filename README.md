@@ -21,7 +21,7 @@ defaults =
   blockUIClass: "blockui-blocked" # this class will be appended to the body
 ```
 <h2>How to use it</h2>
-Inject the service in your controller
+Inject the service into your controller
 ```coffeescript
 'use strict'
 
