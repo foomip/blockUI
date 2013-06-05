@@ -4,13 +4,15 @@ blockUI AngularJS Service
 
 **blockUI** service/provider for AngularJS inspired by blockUI jQuery plugin.
 
-<h2>Include the service in your application</h2>
+<h2>How to use it</h2>
+
+<h3>Include the service in your application</h3>
 ```coffeescript
 'use strict'
 
 app = angular.module('BlockUI'])
 ```
-<h2>Default options</h2>
+<h3>Default options</h3>
 
 ```coffeescript
 # Overwrite what you need
@@ -20,8 +22,8 @@ defaults =
   innerHTML: 'Loading ...' # Overwrite this with your content i.e. <img src="/some/path"/>
   blockUIClass: "blockui-blocked" # this class will be appended to the body
 ```
-<h2>How to use it</h2>
-Inject the service into your controller
+
+<h3>Inject the service into your controller</h3>
 ```coffeescript
 'use strict'
 
