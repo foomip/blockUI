@@ -6,8 +6,8 @@ angular.module('BlockUI', [])
     defaults =
       # messageClass: 'blockui-message' # from user (optional)
       # backdropClass: 'blockui-backdrop' # from user (optional)
-      innerHTML: 'Loading ...'
-      blockUIClass: "blockui-blocked"
+      innerHTML: 'Loading ...' # Overwrite this with your content i.e. <img src="/some/path"/>
+      blockUIClass: "blockui-blocked" # this class will be appended to the body 
 
     # Returns the `$blockUI` service that is injected in controllers
     @$get = ["$document", ($document) ->
