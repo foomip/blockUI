@@ -9,7 +9,7 @@ blockUI Service
 'use strict'
 
 app = angular.module('BlockUI'])
-
+```
 <h2>Default options</h2>
 
 ```coffeescript
@@ -19,7 +19,7 @@ defaults =
   # backdropClass: 'blockui-backdrop' # from user (optional)
   innerHTML: 'Loading ...' # Overwrite this with your content i.e. <img src="/some/path"/>
   blockUIClass: "blockui-blocked" # this class will be appended to the body
-
+```
 <h2>How to use it</h2>
 Inject the service in your controller
 ```coffeescript
@@ -37,4 +37,4 @@ angular.module('Controllers')
           blockUI.unblockUI()
           console.log "Success callback - unblocking" 
     ]
-
+```
