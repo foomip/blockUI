@@ -20,8 +20,6 @@ angular.module('BlockUI', [])
       BlockUI = (opts) ->
         options = @options = angular.extend({}, defaults, opts)
 
-        console.log "blockuiservice::constructor() - options:", options
-
         if options.backdropClass?
           @backdropEl = createElement(options.backdropClass)
         else
