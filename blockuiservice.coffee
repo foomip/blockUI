@@ -33,11 +33,11 @@ angular.module('BlockUI', [])
             width: '100%'
             height: '100%'
             top: 0
-            leff: 0
+            left: 0
             'background-color': '#000'
             opacity: 0.6
             cursor: 'wait'
-            position: 'fixed'
+            position: 'absolute'
           @backdropEl = angular.element('<div>').css(backdropCss)
 
         if options.messageClass?
